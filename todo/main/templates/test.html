@@ -15,12 +15,18 @@
 
     <section>
         <div class="create_container">
-            <input
-            class="create_input"
-            type="text"
-            placeholder="write new task here">
-            <button class="create_button">Add button</button>
+            <form action="{% url 'add-todo' %}" method="POST">
+                {% csrf_token %}
+                <input
+                class="create_input"
+                type="text"
+                placeholder="write new task here"
+                name="todo_text"
+                />
+                <button class="create_button">Add button</button>
+            </form>
         </div>
+
 
 
         <div class="todo_container">
