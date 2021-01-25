@@ -75,8 +75,8 @@ section{
 }
 
 .todo_item.marked{
-    background-color: lavender;
-    border: 2px solid ivory;
+    background-color: goldenrod;
+    border: 2px solid: gold;
 }
 
 .todo_item.header{
